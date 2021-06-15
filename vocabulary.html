@@ -1,0 +1,88 @@
+<html>
+<head><script src="js/jquery.min.js"></script></head>
+<body>
+<button id="backtohome">back to home</button><br>
+<button id="back">back to vocabulary quiz list</button><br>
+<div id="judul_soal"></div>
+<div id="list_soal"></div>
+<div id="pilihan_jawaban"></div>
+<div id="btn-submit"></div>
+<div id="result"></div>
+</body>
+</html>
+<script>
+    //membuat tomol back to home berfungsi
+    $( "#backtohome" ).click(function() {
+        location.href = "index.html";
+    });
+
+    $( "#back" ).click(function() {
+            location.href = "vocabulary.html";
+    });
+
+    //mengambil objek dari file json
+    $.getJSON("soal_vocabulary/soal_vocabulary_one.json", function(result){
+
+        //looping dimensi pertama
+        $.each(result, function(i, field){ 
+            $("#back").hide();
+
+            //menampilkan judul soal
+            $("#judul_soal").append("<button class='c_judul' id="+i+">"+i+"</button>"+"<br><br>");
+            
+            
+            //kalau judul soal di klik
+            $( "#"+i ).click(function() {
+                $(".c_judul").hide();
+                $("#back").show();
+
+                //looping dimensi kedua untuk ambil soal
+                $.each(field, function(i, field){
+                    $("#list_soal").append(i + ". " +field.soal + 
+                    "<div><i>hint :" + field.hint + "</i>" +
+                    "<br><input type='text' class='c_soal' id='soal" + i + "'>"+
+                    "<div id='correction"+ i + "'></div>"
+                    +"</div><br><br>"
+                    );
+                }); 
+
+            //membuat button submit jawaban
+            $("#btn-submit").append("<button id='submitanswer"+i+"'>Submit answer</button>");
+            
+            $( "#back_to_vocabulary" ).click(function() {
+                location.href = "vocabulary.html";
+                alert("back");
+            });
+            //jika button submit jawaban di pencet
+            $( "#submitanswer"+i ).click(function() {
+                $( ".c_soal" ).prop( "disabled", true );
+                $("#btn-submit").hide();
+                let jawaban_benar = [];
+                let jawaban_salah = [];
+
+                //looping dimensi kedua untuk ambil jawaban
+                $.each(field, function(i, field){
+                    if($("#soal"+i).val() == field.jawaban) {
+                        $("#correction"+i).append("✔ Correct Answer");
+                        jawaban_benar.push(" No."+i);
+                    } else {
+                        $("#correction"+i).append("✘ Wrong Answer, Correct answer is : "+ field.jawaban );
+                        jawaban_salah.push(" No."+i);
+                    }
+                }); 
+        
+                $("#result").append(
+                    "<div>Total Correct answer : "+jawaban_benar.length+"</div>"+
+                    "<div>Total Wrong answer : "+jawaban_salah.length+"</div>"+
+                    "<div><button id='back'>Back to Vocabulary quiz list</button></div"
+                );
+                // $( "#back" ).click(function() {
+                //     location.href = "vocabulary.html";
+                // });
+            }); 
+
+            });
+        });  
+    });
+    
+</script>

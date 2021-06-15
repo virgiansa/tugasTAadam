@@ -1,0 +1,28 @@
+{
+    "judul_soal1" :
+    {
+        "1":{"soal":"Unnecessary but nice, opulence" , "hint" : "l_xu_y", "jawaban":"luxury"},
+        
+        "2":{"soal":"A person who relies on another for financial support, contingent on or determined by", "hint" : "dep_n_en_", "jawaban":"dependent"},
+        
+        "3":{"soal":"Change to fit a new situation; modify; alter; adjust", "hint" : "a_ap_ ", "jawaban":"adapt"},
+        
+        "4":{"soal":"Correct and exact, precise, error-free ",	"hint":"_ccu_at_", "jawaban":"accurate"},
+        
+        "5":{"soal":"Disclose, reveal, tell, communicate, proclaim", "hint" : "_iv_lg_", "jawaban":"divulge"}
+    
+    },
+
+    "judul_soal2" :
+    {
+        "1":{"soal":"Unnecessary but nice, opulence" , "hint" : "l_xu_y", "jawaban":"luxury"},
+        
+        "2":{"soal":"A person who relies on another for financial support, contingent on or determined by","hint" : "dep_n_en_", "jawaban":"dependent"},
+        
+        "3":{"soal":"Change to fit a new situation; modify; alter; adjust", "hint" : "a_ap_ ", "jawaban":"adapt"},
+        
+        "4":{"soal":"Correct and exact, precise, error-free ",	"hint":"_ccu_at_", "jawaban":"accurate"},
+        
+        "5":{"soal":"Disclose, reveal, tell, communicate, proclaim", "hint" : "_iv_lg_", "jawaban":"divulge"}
+    }
+}

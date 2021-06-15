@@ -1,0 +1,50 @@
+{
+  "judul_soal1" :
+    {
+      "story":"My name is Hans. I (1)—- a mechanic. I (2)—- in London, I (3)—- a brother and a sister. My sister is a university student. She (4)—- medicine. She is going to be a doctor. My brother doesn’t want (5)—- to university. (6)—-he wants to be a mechanic like me. He comes and (7)—- me in my shop on Sundays. He hasn’t finished his education yet. (8)—- his education, he is thinking of (9)—- with me. We will (10)—- the business together.",
+
+      "1":{"a":"is" , "b":"are" , "c":"am" , "d":"do" , "jawaban": "c"},
+      
+      "2":{"a":"believe" , "b":"think" , "c":"arrive " , "d":"live" , "jawaban": "d"},
+
+      "3":{"a":"owns" , "b":"learn" , "c":"have" , "d":"study" ,"jawaban": "c"},
+
+      "4":{"a":" teach" , "b":"to play" , "c":"studies" , "d":"uses" , "jawaban": "c"},
+
+      "5":{"a":" teach" , "b":"to play" , "c":"studies" , "d":"to go" , "jawaban": "d"},
+
+      "6":{"a":" Because" , "b":"Although" , "c":"Behind" , "d":"During" , "jawaban": "a"},
+
+      "7":{"a":" works" , "b":"helps" , "c":"is angry with" , "d":"shouts at" , "jawaban": "b"},
+
+      "8":{"a":" For" , "b":"Because" , "c":"After " , "d":"So" , "jawaban": "c"},
+
+      "9":{"a":"works" , "b":"worked" , "c":"to work" , "d":"working" , "jawaban": "d"},
+
+      "10":{"a":"run" , "b":"depart" , "c":"pu" , "d":"wear" , "jawaban": "a"}
+    },
+    "judul_soal2" :
+    {
+      "story":"My name is Hans. I (1)—- a mechanic. I (2)—- in London, I (3)—- a brother and a sister. My sister is a university student. She (4)—- medicine. She is going to be a doctor. My brother doesn’t want (5)—- to university. (6)—-he wants to be a mechanic like me. He comes and (7)—- me in my shop on Sundays. He hasn’t finished his education yet. (8)—- his education, he is thinking of (9)—- with me. We will (10)—- the business together.",
+
+      "1":{"a":"is" , "b":"are" , "c":"am" , "d":"do" , "jawaban": "c"},
+      
+      "2":{"a":"believe" , "b":"think" , "c":"arrive " , "d":"live" , "jawaban": "d"},
+
+      "3":{"a":"owns" , "b":"learn" , "c":"have" , "d":"study" ,"jawaban": "c"},
+
+      "4":{"a":" teach" , "b":"to play" , "c":"studies" , "d":"uses" , "jawaban": "c"},
+
+      "5":{"a":" teach" , "b":"to play" , "c":"studies" , "d":"to go" , "jawaban": "d"},
+
+      "6":{"a":" Because" , "b":"Although" , "c":"Behind" , "d":"During" , "jawaban": "a"},
+
+      "7":{"a":" works" , "b":"helps" , "c":"is angry with" , "d":"shouts at" , "jawaban": "b"},
+
+      "8":{"a":" For" , "b":"Because" , "c":"After " , "d":"So" , "jawaban": "c"},
+
+      "9":{"a":"works" , "b":"worked" , "c":"to work" , "d":"working" , "jawaban": "d"},
+
+      "10":{"a":"run" , "b":"depart" , "c":"pu" , "d":"wear" , "jawaban": "a"}
+    }
+}
